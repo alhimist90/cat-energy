@@ -1,0 +1,133 @@
+.work-example__wrapper {
+  margin-bottom: 40px;
+}
+
+.work-example__title {
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic_black;
+
+  margin-bottom: 35px;
+}
+
+.work-example__list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.work-example__item {
+  min-height: 60px;
+
+  margin-bottom: 25px;
+
+  padding-left: 75px;
+
+  position: relative;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(1)::before {
+    background-image: url(../../img/green-element-index--1.svg);
+  }
+
+  &:nth-child(2)::before {
+    background-image: url(../../img/green-element-index--2.svg);
+  }
+
+  &:nth-child(3)::before {
+    background-image: url(../../img/green-element-index--3.svg);
+  }
+
+  &:nth-child(4)::before {
+    background-image: url(../../img/green-element-index--4.svg);
+  }
+}
+
+.work-example__text {
+  margin: 0;
+}
+
+.work-example__number {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .work-example__wrapper {
+    margin-bottom: 45px;
+  }
+
+  .work-example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .work-example__list {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-column-gap: 135px;
+    grid-row-gap: 40px;
+  }
+
+  .work-example__item {
+    min-height: auto;
+
+    margin-bottom: 0;
+
+    padding-left: 0;
+    padding-top: 153px;
+    padding-right: 5px;
+    padding-bottom: 55px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+
+      background-size: 80px 80px;
+    }
+  }
+
+  .work-example__number {
+    display: block;
+
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    color: $basic_grey;
+
+    position: absolute;
+    top: -40px;
+    right: 0;
+
+    z-index: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .work-example__wrapper {
+    margin-bottom: 70px;
+  }
+
+  .work-example__list {
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-column-gap: 80px;
+    grid-row-gap: 0;
+  }
+}

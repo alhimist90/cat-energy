@@ -1,0 +1,43 @@
+.info__main {
+  background-color: $basic_white;
+}
+
+.info__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.info__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dlack;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+.info__adress {
+  font-size: 14px;
+  line-height: 20px;
+
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .info__wrapper {
+    padding: 70px;
+  }
+
+  .info__text {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .info__adress {
+    font-size: 16px;
+  }
+}
