@@ -171,6 +171,15 @@
 
     margin: 0;
     margin-bottom: 65px;
+
+    &:nth-child(2n) .catalog__img {
+      top: -80px;
+    }
+
+    &:nth-child(2n) .catalog__img img {
+      width: 168px;
+      height: 206px;
+    }
   }
 
   .catalog__item-more {
@@ -232,7 +241,7 @@
   .catalog__img {
     position: absolute;
 
-    top: -40px;
+    top: -50px;
     right: 50%;
     transform: translate(50%, 0);
   }
@@ -267,5 +276,10 @@
     width: 1440px;
     margin: 0 auto;
     padding: 0 110px;
+  }
+
+  .catalog__img {
+    right: auto;
+    transform: none;
   }
 }

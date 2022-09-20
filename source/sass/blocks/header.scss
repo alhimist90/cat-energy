@@ -160,6 +160,18 @@
     padding: 0;
   }
 
+  .header__logo--active {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
   .header__logo img {
     width: 174px;
     height: 51px;
@@ -175,7 +187,7 @@
 
 @media (min-width: $desktop-width) {
   .header__desktop {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 0.85) 50%);
+    background: linear-gradient(to right, #fff 49%, #65a73c 49%, #65a73c 70%, transparent 75%);
   }
 
   .header__wrapper {

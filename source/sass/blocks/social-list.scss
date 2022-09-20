@@ -24,6 +24,13 @@
 .social-list__item-link {
   display: flex;
 
+  fill: #666;
+
+  &--facebook {
+    stroke: #666;
+    fill: none;
+  }
+
   &:hover svg {
     stroke: $basic_green;
   }
@@ -37,5 +44,23 @@
 @media (min-width: $tablet-width) {
   .social-list {
     border: none;
+  }
+
+  .social-list__item-link {
+
+    &--vk svg {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--inst svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook svg {
+      width: 28px;
+      height: 33px;
+    }
   }
 }
