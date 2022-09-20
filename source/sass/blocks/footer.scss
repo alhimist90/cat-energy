@@ -10,6 +10,21 @@
 .footer__logo {
   justify-self: center;
   align-self: center;
+
+  cursor: default;
+
+  &--active {
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
 }
 
 .footer__social-list {
@@ -17,8 +32,6 @@
 }
 
 .footer__html-academy-link-wrapper {
-  position: relative;
-
   align-self: center;
 
   margin: 0;
@@ -52,5 +65,15 @@
 
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .footer__html-academy-link-text {
+    margin: 0;
+
+    padding-right: 30px;
+  }
+
+  .footer__html-academy-link-icon {
+    display: flex;
   }
 }

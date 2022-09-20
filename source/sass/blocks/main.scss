@@ -7,3 +7,8 @@
   line-height: 20px;
 }
 
+@media (min-width: $desktop-width) {
+  .main__additional-goods {
+    margin-bottom: 85px;
+  }
+}

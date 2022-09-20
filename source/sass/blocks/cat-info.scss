@@ -3,7 +3,9 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
 
+.cat-info__wrapper {
   padding-top: 25px;
 }
 
@@ -37,6 +39,10 @@
     line-height: 30px;
   }
 
+  .cat-info__wrapper {
+    padding-top: 50px;
+  }
+
   .cat-info__container {
     width: 768px;
 
@@ -66,6 +72,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .cat-info__wrapper {
+    padding-top: 70px;
+  }
+
   .cat-info__container {
     width: 1440px;
 
