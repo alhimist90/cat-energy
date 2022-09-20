@@ -1,12 +1,13 @@
 {
   "private": true,
+  "homepage": "https://alhimist90.github.io/cat-energy/",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
     "browser-sync": "2.26.14",
     "del": "6.0.0",
+    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "5.0.1",
     "gulp-imagemin": "7.1.0",
     "gulp-plumber": "1.2.1",
@@ -26,7 +27,9 @@
     "stylelint": "stylelint \"source/sass/**/*.sass\" --syntax sass",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
